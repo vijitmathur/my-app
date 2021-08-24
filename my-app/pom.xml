@@ -41,22 +41,7 @@
   </dependencies>
   <build>
     <plugins>
-      <plugin>
-	
-	<executions>
-	  <execution>
-	    <goals>
-	      <goal>java</goal>
-	    </goals>
-	  </execution>
-	</executions>
-	<configuration>
-	  <mainClass>com.mycompany.app.App</mainClass>
-	  <arguments>
-	    <argument>argument1</argument>
-	  </arguments>
-	</configuration>
-      </plugin>
+      
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-shade-plugin</artifactId>
