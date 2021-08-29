@@ -66,9 +66,15 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
-                </configuration>
+                <executions>
+			<execution>
+				<id>make-a-war</id>
+				<phase>compile</phase>
+				<goals>
+					<goal>war</goal>
+				</goals>
+			</execution>
+		    </executions>
             </plugin>
         </plugins>
       <plugin>
