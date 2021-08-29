@@ -62,6 +62,15 @@
 	  </execution>
 	</executions>
       </plugin>
+	    <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>WebContent\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
       <plugin>
           <!-- This plugin will set the properties values using dependency information -->
           <groupId>org.apache.maven.plugins</groupId>
